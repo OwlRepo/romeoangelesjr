@@ -3,93 +3,113 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 
 const projects = [
-    {
-        title: 'VIMDESK',
-        banner:
-            'https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/vimdesk.png?alt=media&token=347c7f68-3d18-4c03-9b44-4ba2436e6865',
-        protected: false,
-        role: 'Web and Mobile Developer',
-        stack:['NuxtJS','VueJS','TailwindCSS','ViteJS','React Native','Javascript'],
-        redirectUrl:'https://cotit.io/product',
-        desc: 'VimDesk is the operational console that gathers data and follows business activities extensively. With the ability to integrate and /or extract daily software tools such as ERP, MES, CRM, Finance, and more.',
-    },
-    {
-        title: 'COTIT.IO',
-        banner:
-            'https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/COTIT-IO-SS.png?alt=media&token=3834ad7f-4a5d-4275-82c8-efd33d05e12b',
-        protected: false,
-        role: 'Lead Web Developer',
-        stack:['NuxtJS','VueJS','TailwindCSS','Javascript'],
-        redirectUrl:'https://cotit.io/',
-        desc: `A solution that offers 360 transparency and control of your business. Their supply chain provides real-time visibility and traceability, ensuring monitoring of goods' movement from origin to destination.`,
-    },
-    {
-        title: 'Denzel Escoto - Portfolio',
-        banner:
-            'https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/Screenshot%202024-05-16%20at%2010.36.57%E2%80%AFPM.png?alt=media&token=d06863e0-4c75-40c4-a4f6-aec5c401acdf',
-        protected: false,
-        role: 'Lead Web Developer',
-        stack:['NuxtJS','VueJS','TailwindCSS','ViteJS','Typescript'],
-        redirectUrl:'https://denzelescoto.vercel.app/',
-        desc: `A user interface and user experience engineer's web portfolio for Denzel Escoto. A designer who craft a good experience for over 4 years of experience. Specializes in FIGMA.`,
-    },
-    //TODO: Add more projects
-    // 1. COTIT.IO Landing Page
-    // 2. VIATAG Admin Dashboard
-    // 3. VIMDESK Mobile Application
-    // 4. NEONLIFE Landing Page
-    // 5. NEONLIFE iOS
-    // 6. NEON AI Builder
-    // 7. THRIVE Android (In-device AI)
-]
+  {
+    title: "VIMDESK",
+    banner:
+      "https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/COTIT-IO-SS.png?alt=media&token=3834ad7f-4a5d-4275-82c8-efd33d05e12b",
+    protected: false,
+    role: "Web and Mobile Developer",
+    stack: ["VueJS", "TailwindCSS", "ViteJS", "React Native", "Javascript"],
+    redirectUrl: "https://cotit.io/product/vimdesk",
+    desc: "VimDesk is the operational console that gathers data and follows business activities extensively. With the ability to integrate and /or extract daily software tools such as ERP, MES, CRM, Finance, and more.",
+  },
+  {
+    title: "COTIT.IO",
+    banner:
+      "https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/COTIT-IO-SS.png?alt=media&token=3834ad7f-4a5d-4275-82c8-efd33d05e12b",
+    protected: false,
+    role: "Lead Web Developer",
+    stack: ["NuxtJS", "VueJS", "TailwindCSS", "Javascript"],
+    redirectUrl: "https://cotit.io/",
+    desc: `A solution that offers 360 transparency and control of your business. Their supply chain provides real-time visibility and traceability, ensuring monitoring of goods' movement from origin to destination.`,
+  },
+  {
+    title: "Denzel Escoto - Portfolio",
+    banner:
+      "https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/Screenshot%202024-05-16%20at%2010.36.57%E2%80%AFPM.png?alt=media&token=d06863e0-4c75-40c4-a4f6-aec5c401acdf",
+    protected: false,
+    role: "Lead Web Developer",
+    stack: ["NuxtJS", "VueJS", "TailwindCSS", "ViteJS", "Typescript"],
+    redirectUrl: "https://denzelescoto.vercel.app/",
+    desc: `A user interface and user experience engineer's web portfolio for Denzel Escoto. A designer who craft a good experience for over 4 years of experience. Specializes in FIGMA.`,
+  },
+  //TODO: Add more projects
+  // 1. COTIT.IO Landing Page
+  // 2. VIATAG Admin Dashboard
+  // 3. VIMDESK Mobile Application
+  // 4. NEONLIFE Landing Page
+  // 5. NEONLIFE iOS
+  // 6. NEON AI Builder
+  // 7. THRIVE Android (In-device AI)
+];
 ---
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
+    <div class="flex justify-center mb-10">
+      <a href="https://app.daily.dev/romeoangelesjr"
+        ><img
+          class="w-full"
+          src="https://api.daily.dev/devcards/v2/iGo5aeTE4EVvxH2gBN2Ae.png?type=wide&r=72h"
+          alt="Romeo Angeles JR's Dev Card"
+        /></a
+      >
+    </div>
     <div class="text-xl py-1">Hey there 👋</div>
     <div class="text-5xl font-bold">I'm Romeo Angeles Jr</div>
     <div class="text-3xl py-3 font-bold">Software Engineer</div>
     <div class="py-2">
       <text class="text-lg">
-        I'm a UI engineer who crafts pixel-perfect interfaces using cutting-edge frameworks with React and Vue ecosystem. Let's build something amazing together!
+        I'm a UI engineer who crafts pixel-perfect interfaces using cutting-edge
+        frameworks with React and Vue ecosystem. Let's build something amazing
+        together!
       </text>
+      <div class="mt-8">
+        <a
+          class="btn"
+          href="https://www.linkedin.com/in/romeo-angeles-jr-a88a021a9/"
+          target="_blank"
+        >
+          Let's connect!</a
+        >
+        <a
+          href="https://github.com/OwlRepo"
+          target="_blank"
+          class="btn btn-outline ml-5"
+        >
+          My Github
+        </a>
+      </div>
     </div>
-    <div class="mt-8">
-      <a class="btn" href="https://www.linkedin.com/in/romeo-angeles-jr-a88a021a9/" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/OwlRepo" target="_blank" class="btn btn-outline ml-5">
-        My Github
-      </a>
+
+    <div>
+      <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
     </div>
-  </div>
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
-  </div>
-
-  {
-    projects.reverse().map(project =>  
+    {
+      projects.reverse().map((project) => (
         <>
           <HorizontalCard
             title={project.title}
             img={project.banner}
             desc={project.desc}
-            url={project.redirectUrl ? project.redirectUrl : '#'}
-            badge={project.protected ? 'No Preview':''}
+            url={project.redirectUrl ? project.redirectUrl : "#"}
+            badge={project.protected ? "No Preview" : ""}
             tags={project.stack}
           />
-          <div class="divider my-0"></div>
+          <div class="divider my-0" />
         </>
-    )
-  }
-
+      ))
+    }
+    <!-- 
   <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
   </div>
 
-  <div class="text-center text-xl p-10 text-gray-400">
+  <div class="text-center text-md p-10 text-gray-400">
     In progress of creating the first one ... ✍🏻
   </div>
-  <!-- {
+  {
     last_posts.map((post) => (
       <>
         <HorizontalCard
@@ -104,4 +124,5 @@ const projects = [
       </>
     ))
   } -->
+  </div>
 </BaseLayout>
