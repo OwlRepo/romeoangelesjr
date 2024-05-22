@@ -3,207 +3,216 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 
 const projects = [
-    {
-        title: 'TALK(QUICKTALK)',
-        banner:
-            'https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/quicktalk.png?alt=media&token=ef280e11-8ffe-4d92-96a7-513e886e14e0',
-        protected: true,
-        role: 'Mobile Developer',
-        stack:['Android Studio','XCode', 'Flutter','Java','SwiftUI','Dart'],
-        desc: "Formerly known as QuickTalk, it is an application that's focused on providing Real Time Communcations to connect brands, people and things anytime and anywhere.",
-    },
-    {
-        title: 'TALK ADMIN',
-        banner:
-            'https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/no-banner.jpg?alt=media&token=9204eb44-8e68-48e2-9325-cd4f20d77213',
-        protected: true,
-        role: ['Web Developer', 'Product Designer', 'NextJS Developer'],
-        role: 'Lead Web Developer, Product Designer',
-        stack:['NextJS','ChakraUI','Javascript'],
-        desc: "A web application that's focused on managing the TALK Mobile Application.",
-    },
-    {
-        title: 'FIDOMONEY',
-        banner:
-            'https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/fidomoney.png?alt=media&token=4d01353b-f2dd-45e5-969e-250865809793',
-        protected: true,
-        role: 'Lead Mobile Developer, Product Designer',
-        stack:['Flutter','Dart','Firestore'],
-        desc: 'Fidomoney is one of the only companies in the financial market that exclusively supplies digital payment solutions.',
-    },
-    {
-        title: 'MYNTHCHAIN',
-        banner:
-            'https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/Screenshot_20230219_041450.png?alt=media&token=f2d1d558-71c7-4ac3-a3e2-42bfcc06aac1',
-        protected: true,
-        role: 'Lead Web Developer, Product Designer',
-        stack:['NextJS','ChakraUI','Javascript'],
-        desc: 'The world’s first hybrid digital marketplace for crypto collectables and non - fungible token (NFT)',
-    },
-    {
-        title: 'MYNTHDEX',
-        banner:
-            'https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/dex.png?alt=media&token=a47c1657-8318-4dfb-b643-7132e7e65551',
-        protected: true,
-        role: 'Lead Web Developer, Product Designer',
-        stack:['NextJS','ChakraUI','Javascript'],
-        desc: 'A decentralized crypto exchanges that offer access to digital assets without an intermediary. Instead of relying on a company to fill and record crypto trades, MYNTHDEX offer peer-to-peer (P2P) token swaps using blockchain technology.',
-    },
-    {
-        title: 'MYNTHCHAIN ULTRAVERSE',
-        banner:
-            'https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/ultraverse.png?alt=media&token=547c3067-ade2-497a-9c0e-9b14cc0f9757',
-        protected: true,
-        role: 'Lead Web Developer, Product Designer',
-        stack:['NextJS','ChakraUI','Javascript'],
-        desc: 'A decentralized infrastructure for the AR Ultraverse, merging the physical and virtual world through Augmented Reality, creating a new dimension where everything is possible.',
-    },
-    {
-        title: 'U-PRO PLUS',
-        banner:
-            'https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/no-banner.jpg?alt=media&token=9204eb44-8e68-48e2-9325-cd4f20d77213',
-        protected: true,
-        role: 'Lead Mobile Developer, Product Designer',
-        stack:['Flutter','Dart'],
-        desc: 'A Cross Platform Mobile Application made for advertising purposes such as ADs management for Beauty Salons in Japan',
-    },
-    {
-        title: 'Digipay PH | Landing Page',
-        banner:
-            'https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/digipay-landing.png?alt=media&token=c8bda803-2e45-40d6-8b9b-1db91615fc3b',
-        protected: false,
-        role: 'Lead Web Developer',
-        stack:['ReactJS (Class Based Components)','SCSS','Javascript'],
-        redirectUrl:'https://www.digipay.ph/',
-        desc: 'A digital payments and financial services platform with a mobile wallet, an industry leading biller ecosystem, and an interoperable backend.',
-    },
-    {
-        title: 'Digipay PH',
-        banner:
-            'https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/digipay.png?alt=media&token=d252874b-511f-48d0-bd84-a28882b5a375',
-        protected: false,
-        role: 'Lead Web Developer',
-        stack:['ReactJS (Class Based Components)','SCSS','Javascript'],
-        redirectUrl:'https://app.digipay.ph/sign-in',
-        desc: 'A digital payments and financial services platform with a mobile wallet, an industry leading biller ecosystem, and an interoperable backend.',
-    },
-    {
-        title: 'Digipay PH V2.0',
-        banner:
-            'https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/digipay.png?alt=media&token=d252874b-511f-48d0-bd84-a28882b5a375',
-        protected: false,
-        role: 'Lead Web Developer',
-        stack:['NextJS','Bootstrap','Typescript'],
-        redirectUrl:'https://app.digipay.ph/sign-in',
-        desc: 'Revamped and improved version of the Digipay PH that has a digital payments and financial services platform with a mobile wallet',
-    },
-    {
-        title: 'DigiPadala Branch Locator',
-        banner:
-            'https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/digipadala-branch-locator.png?alt=media&token=bacc028d-08e9-4c69-93b2-960c5ea5ce39',
-        protected: false,
-        role: 'Lead Web Developer',
-        stack:['ReactJS (Class Based Components)','SASS','Javascript','PHP'],
-        redirertUrl:'https://www.digipay.ph/branch-locator/',
-        desc: 'A tool that can be used by both consumers and Digipay Agents to locate Digipay Enabled stores worldwide.',
-    },
-    {
-        title: 'Back Office - Digipay PH',
-        banner:
-            'https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/backoffice%20digipay.png?alt=media&token=9f3593bd-0ed8-4ff7-a183-de5782cac3c1',
-        protected: true,
-        role: 'Lead Web Developer, Product Designer',
-        stack:['Ruby On Rails','Ruby','SASS','JQuery','Javascript'],
-        desc: 'A web application for managing transactions and other related operations.',
-    },
-    {
-        title: 'Back Office - Digipay PH V2.0',
-        banner:
-            'https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/backoffice%20digipay.png?alt=media&token=9f3593bd-0ed8-4ff7-a183-de5782cac3c1',
-        protected: true,
-        role: 'Lead Web Developer, Product Designer',
-        stack:['NextJS','ChakraUI','Typescript'],
-        desc: 'Revamped and improved version of the Digipay PH that focuses on managing transactions and other transaction related stuff that\'s being made on Digipay PH',
-    },
-    {
-        title: 'VIMDESK',
-        banner:
-            'https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/COTIT-IO-SS.png?alt=media&token=3834ad7f-4a5d-4275-82c8-efd33d05e12b',
-        protected: false,
-        role: 'Web and Mobile Developer',
-        stack:['VueJS','TailwindCSS','ViteJS','React Native','Javascript'],
-        redirectUrl:'https://cotit.io/product/vimdesk',
-        desc: 'VimDesk is the operational console that gathers data and follows business activities extensively. With the ability to integrate and /or extract daily software tools such as ERP, MES, CRM, Finance, and more.',
-    },
-    {
-        title: 'VIATAG',
-        banner:
-            'https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/COTIT-IO-SS.png?alt=media&token=3834ad7f-4a5d-4275-82c8-efd33d05e12b',
-        protected: false,
-        role: 'Web and Mobile Developer',
-        stack:['FilamentPHP','Laravel','PHP'],
-        redirectUrl:'https://cotit.io/product/viatag',
-        desc: 'Gain Full Transparency of your business - Trace product from production to distribution - Creates a safe tracking and a long secured partnership',
-    },
-    {
-        title: 'NEOLINK',
-        banner:
-            'https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/COTIT-IO-SS.png?alt=media&token=3834ad7f-4a5d-4275-82c8-efd33d05e12b',
-        protected: false,
-        role: 'Web and Mobile Developer',
-        stack:['FilamentPHP','Laravel','PHP'],
-        redirectUrl:'https://cotit.io/product/neolink',
-        desc: 'Add desired company or personal information - Link social media networks - Stream providers, websites, and other digital platforms to your profile.',
-    },
-    {
-        title: 'COTIT.IO',
-        banner:
-            'https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/COTIT-IO-SS.png?alt=media&token=3834ad7f-4a5d-4275-82c8-efd33d05e12b',
-        protected: false,
-        role: 'Lead Web Developer',
-        stack:['NuxtJS','VueJS','TailwindCSS','Javascript'],
-        redirectUrl:'https://cotit.io/',
-        desc: `A solution that offers 360 transparency and control of your business. Their supply chain provides real-time visibility and traceability, ensuring monitoring of goods' movement from origin to destination.`,
-    },
-    {
-        title: 'Denzel Escoto - Portfolio',
-        banner:
-            'https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/Screenshot%202024-05-16%20at%2010.36.57%E2%80%AFPM.png?alt=media&token=d06863e0-4c75-40c4-a4f6-aec5c401acdf',
-        protected: false,
-        role: 'Lead Web Developer',
-        stack:['NuxtJS','VueJS','TailwindCSS','ViteJS','Typescript'],
-        redirectUrl:'https://denzelescoto.vercel.app/',
-        desc: `A user interface and user experience engineer's web portfolio for Denzel Escoto. A designer who craft a good experience for over 4 years of experience. Specializes in FIGMA.`,
-    },
-    //TODO: Add more projects
-    // 1. COTIT.IO Landing Page
-    // 2. VIATAG Admin Dashboard
-    // 3. VIMDESK Mobile Application
-    // 4. NEONLIFE Landing Page
-    // 5. NEONLIFE iOS
-    // 6. NEON AI Builder
-    // 7. THRIVE Android (In-device AI)
-]
-
+  {
+    title: "TALK(QUICKTALK)",
+    banner:
+      "https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/quicktalk.png?alt=media&token=ef280e11-8ffe-4d92-96a7-513e886e14e0",
+    protected: true,
+    role: "Mobile Developer",
+    stack: ["Android Studio", "XCode", "Flutter", "Java", "SwiftUI", "Dart"],
+    desc: "Formerly known as QuickTalk, it is an application that's focused on providing Real Time Communcations to connect brands, people and things anytime and anywhere.",
+  },
+  {
+    title: "TALK ADMIN",
+    banner:
+      "https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/no-banner.jpg?alt=media&token=9204eb44-8e68-48e2-9325-cd4f20d77213",
+    protected: true,
+    role: ["Web Developer", "Product Designer", "NextJS Developer"],
+    role: "Lead Web Developer, Product Designer",
+    stack: ["NextJS", "ChakraUI", "Javascript"],
+    desc: "A web application that's focused on managing the TALK Mobile Application.",
+  },
+  {
+    title: "FIDOMONEY",
+    banner:
+      "https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/fidomoney.png?alt=media&token=4d01353b-f2dd-45e5-969e-250865809793",
+    protected: true,
+    role: "Lead Mobile Developer, Product Designer",
+    stack: ["Flutter", "Dart", "Firestore"],
+    desc: "Fidomoney is one of the only companies in the financial market that exclusively supplies digital payment solutions.",
+  },
+  {
+    title: "MYNTHCHAIN",
+    banner:
+      "https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/Screenshot_20230219_041450.png?alt=media&token=f2d1d558-71c7-4ac3-a3e2-42bfcc06aac1",
+    protected: true,
+    role: "Lead Web Developer, Product Designer",
+    stack: ["NextJS", "ChakraUI", "Javascript"],
+    desc: "The world’s first hybrid digital marketplace for crypto collectables and non - fungible token (NFT)",
+  },
+  {
+    title: "MYNTHDEX",
+    banner:
+      "https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/dex.png?alt=media&token=a47c1657-8318-4dfb-b643-7132e7e65551",
+    protected: true,
+    role: "Lead Web Developer, Product Designer",
+    stack: ["NextJS", "ChakraUI", "Javascript"],
+    desc: "A decentralized crypto exchanges that offer access to digital assets without an intermediary. Instead of relying on a company to fill and record crypto trades, MYNTHDEX offer peer-to-peer (P2P) token swaps using blockchain technology.",
+  },
+  {
+    title: "MYNTHCHAIN ULTRAVERSE",
+    banner:
+      "https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/ultraverse.png?alt=media&token=547c3067-ade2-497a-9c0e-9b14cc0f9757",
+    protected: true,
+    role: "Lead Web Developer, Product Designer",
+    stack: ["NextJS", "ChakraUI", "Javascript"],
+    desc: "A decentralized infrastructure for the AR Ultraverse, merging the physical and virtual world through Augmented Reality, creating a new dimension where everything is possible.",
+  },
+  {
+    title: "U-PRO PLUS",
+    banner:
+      "https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/no-banner.jpg?alt=media&token=9204eb44-8e68-48e2-9325-cd4f20d77213",
+    protected: true,
+    role: "Lead Mobile Developer, Product Designer",
+    stack: ["Flutter", "Dart"],
+    desc: "A Cross Platform Mobile Application made for advertising purposes such as ADs management for Beauty Salons in Japan",
+  },
+  {
+    title: "Digipay PH | Landing Page",
+    banner:
+      "https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/digipay-landing.png?alt=media&token=c8bda803-2e45-40d6-8b9b-1db91615fc3b",
+    protected: false,
+    role: "Lead Web Developer",
+    stack: ["ReactJS (Class Based Components)", "SCSS", "Javascript"],
+    redirectUrl: "https://www.digipay.ph/",
+    desc: "A digital payments and financial services platform with a mobile wallet, an industry leading biller ecosystem, and an interoperable backend.",
+  },
+  {
+    title: "Digipay PH",
+    banner:
+      "https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/digipay.png?alt=media&token=d252874b-511f-48d0-bd84-a28882b5a375",
+    protected: false,
+    role: "Lead Web Developer",
+    stack: ["ReactJS (Class Based Components)", "SCSS", "Javascript"],
+    redirectUrl: "https://app.digipay.ph/sign-in",
+    desc: "A digital payments and financial services platform with a mobile wallet, an industry leading biller ecosystem, and an interoperable backend.",
+  },
+  {
+    title: "Digipay PH V2.0",
+    banner:
+      "https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/digipay.png?alt=media&token=d252874b-511f-48d0-bd84-a28882b5a375",
+    protected: false,
+    role: "Lead Web Developer",
+    stack: ["NextJS", "Bootstrap", "Typescript"],
+    redirectUrl: "https://app.digipay.ph/sign-in",
+    desc: "Revamped and improved version of the Digipay PH that has a digital payments and financial services platform with a mobile wallet",
+  },
+  {
+    title: "DigiPadala Branch Locator",
+    banner:
+      "https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/digipadala-branch-locator.png?alt=media&token=bacc028d-08e9-4c69-93b2-960c5ea5ce39",
+    protected: false,
+    role: "Lead Web Developer",
+    stack: ["ReactJS (Class Based Components)", "SASS", "Javascript", "PHP"],
+    redirectUrl: "https://www.digipay.ph/branch-locator/",
+    desc: "A tool that can be used by both consumers and Digipay Agents to locate Digipay Enabled stores worldwide.",
+  },
+  {
+    title: "Back Office - Digipay PH",
+    banner:
+      "https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/backoffice%20digipay.png?alt=media&token=9f3593bd-0ed8-4ff7-a183-de5782cac3c1",
+    protected: true,
+    role: "Lead Web Developer, Product Designer",
+    stack: ["Ruby On Rails", "Ruby", "SASS", "JQuery", "Javascript"],
+    desc: "A web application for managing transactions and other related operations.",
+  },
+  {
+    title: "Back Office - Digipay PH V2.0",
+    banner:
+      "https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/backoffice%20digipay.png?alt=media&token=9f3593bd-0ed8-4ff7-a183-de5782cac3c1",
+    protected: true,
+    role: "Lead Web Developer, Product Designer",
+    stack: ["NextJS", "ChakraUI", "Typescript"],
+    desc: "Revamped and improved version of the Digipay PH that focuses on managing transactions and other transaction related stuff that's being made on Digipay PH",
+  },
+  {
+    title: "VIMDESK",
+    banner:
+      "https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/COTIT-IO-SS.png?alt=media&token=3834ad7f-4a5d-4275-82c8-efd33d05e12b",
+    protected: false,
+    role: "Web and Mobile Developer",
+    stack: ["VueJS", "TailwindCSS", "ViteJS", "React Native", "Javascript"],
+    redirectUrl: "https://cotit.io/product/vimdesk",
+    desc: "VimDesk is the operational console that gathers data and follows business activities extensively. With the ability to integrate and /or extract daily software tools such as ERP, MES, CRM, Finance, and more.",
+  },
+  {
+    title: "VIATAG",
+    banner:
+      "https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/COTIT-IO-SS.png?alt=media&token=3834ad7f-4a5d-4275-82c8-efd33d05e12b",
+    protected: false,
+    role: "Web and Mobile Developer",
+    stack: ["FilamentPHP", "Laravel", "PHP"],
+    redirectUrl: "https://cotit.io/product/viatag",
+    desc: "Gain Full Transparency of your business - Trace product from production to distribution - Creates a safe tracking and a long secured partnership",
+  },
+  {
+    title: "NEOLINK",
+    banner:
+      "https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/COTIT-IO-SS.png?alt=media&token=3834ad7f-4a5d-4275-82c8-efd33d05e12b",
+    protected: false,
+    role: "Web and Mobile Developer",
+    stack: ["FilamentPHP", "Laravel", "PHP"],
+    redirectUrl: "https://cotit.io/product/neolink",
+    desc: "Add desired company or personal information - Link social media networks - Stream providers, websites, and other digital platforms to your profile.",
+  },
+  {
+    title: "COTIT.IO",
+    banner:
+      "https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/COTIT-IO-SS.png?alt=media&token=3834ad7f-4a5d-4275-82c8-efd33d05e12b",
+    protected: false,
+    role: "Web Developer",
+    stack: ["NuxtJS", "VueJS", "TailwindCSS", "Javascript"],
+    redirectUrl: "https://cotit.io/",
+    desc: `A solution that offers 360 transparency and control of your business. Their supply chain provides real-time visibility and traceability, ensuring monitoring of goods' movement from origin to destination.`,
+  },
+  {
+    title: "HOSTPALACE",
+    banner:
+      "https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/hostpalace.png?alt=media&token=438f701d-9f97-4840-8513-23b2cccb71da",
+    protected: false,
+    role: "Web Developer",
+    stack: ["VueJS", "TailwindCSS", "ViteJS", "Typescript", "Strapi"],
+    redirectUrl: "https://host-palace.com/",
+    desc: `Landing for a Web Solution Private Limited - Indian Web Hosting Company.`,
+  },
+  {
+    title: "Denzel Escoto - Portfolio",
+    banner:
+      "https://firebasestorage.googleapis.com/v0/b/sampleproject-31206.appspot.com/o/Screenshot%202024-05-16%20at%2010.36.57%E2%80%AFPM.png?alt=media&token=d06863e0-4c75-40c4-a4f6-aec5c401acdf",
+    protected: false,
+    role: "Lead Web Developer",
+    stack: ["NuxtJS", "VueJS", "TailwindCSS", "ViteJS", "Typescript"],
+    redirectUrl: "https://denzelescoto.vercel.app/",
+    desc: `A user interface and user experience engineer's web portfolio for Denzel Escoto. A designer who craft a good experience for over 4 years of experience. Specializes in FIGMA.`,
+  },
+  //TODO: Add more projects
+  // 1. COTIT.IO Landing Page
+  // 2. VIATAG Admin Dashboard
+  // 3. VIMDESK Mobile Application
+  // 4. NEONLIFE Landing Page
+  // 5. NEONLIFE iOS
+  // 6. NEON AI Builder
+  // 7. THRIVE Android (In-device AI)
+];
 ---
 
-<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+<BaseLayout title="Projects" sideBarActiveItemID="projects">
   <div>
     <div class="text-3xl w-full font-bold mb-5">Company Projects</div>
   </div>
   {
-    projects.reverse().map(project =>  
-        <>
-          <HorizontalCard
-            title={project.title}
-            img={project.banner}
-            desc={project.desc}
-            url={project.redirectUrl ? project.redirectUrl : '#'}
-            badge={project.protected ? 'No Preview':''}
-            tags={project.stack}
-          />
-          <div class="divider my-0"></div>
-        </>
-    )
+    projects.reverse().map((project) => (
+      <>
+        <HorizontalCard
+          title={project.title}
+          img={project.banner}
+          desc={project.desc}
+          url={project.redirectUrl ? project.redirectUrl : "#"}
+          badge={project.protected ? "No Preview" : ""}
+          tags={project.stack}
+        />
+        <div class="divider my-0" />
+      </>
+    ))
   }
 </BaseLayout>
